@@ -1,0 +1,175 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1529592767881-c6bb394eb83d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.headerBG {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  color: white;
+  font-size: 18px;
+  font-family: Calibri, serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav li {
+  list-style-type: none;
+}
+.nav li:hover {
+  transform: scale(1.01);
+}
+.nav a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.bigText {
+  color: white;
+  font-family: Calibri, serif;
+}
+.bigText h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.nav.scrolled {
+  background-color: #ffffff; /* Darker background color for the nav when scrolled */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav.scrolled a {
+  color: black !important; /* Change text color to black when scrolled */
+}
+
+.nav.scrolled a:hover {
+  color: #484848 !important; /* Optional: change text color on hover */
+}
+
+.hire-me {
+  background-color: black;
+  color: white;
+  display: flex;
+  max-width: 160px;
+  border-radius: 5px;
+}
+
+.education-container {
+  background-color: #f4f4f4;
+}
+.education-container h4 {
+  font-family: Arial, serif;
+  font-weight: 600;
+}
+.education-container .bold {
+  font-weight: 600;
+}
+.education-container .bi {
+  height: 50px;
+}
+
+.education-icon {
+  height: 50px;
+  width: 70px;
+}
+
+.what-i-do h1 {
+  font-size: 50px;
+}
+
+.jobs {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 45%;
+}
+
+.line {
+  width: 100%;
+  padding: 3px;
+  background-color: #3f4652;
+  border-radius: 1px;
+}
+
+.line-thin {
+  width: 100%;
+  padding: 1px;
+  background-color: #3f4652;
+  border-radius: 1px;
+}
+
+.cover-image {
+  height: 500px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 1s;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.projects {
+  min-height: 500px;
+}
+
+.big-text {
+  font-size: 50px;
+  color: #202633;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contacts {
+  height: 500px;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+
+.bi-link {
+  color: #e74050;
+  padding: 12px;
+  border: 1px solid #e74050;
+  border-radius: 50%;
+}
+
+footer {
+  height: 150px;
+  background-color: #111111;
+  color: white;
+}
+footer .bi-headphones, footer .bi-envelope, footer .bi-github, footer .bi-linkedin {
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
