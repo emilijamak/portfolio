@@ -172,10 +172,10 @@ function App() {
         <div className="App">
             <div className="header">
                 <div className="headerBG">
-                    <div className="nav p-3 d-flex justify-content-around">
+                    <div className="nav p-3 d-flex justify-content-around ">
                         <div></div>
                         <div className="">
-                            <ul className="d-flex gap-3 mb-0">
+                            <ul className="sm:flex gap-3 mb-0 hidden">
                                 <li className="me-3">
                                     <a href="#">Home</a>
                                 </li>
@@ -200,13 +200,13 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div id={'about-me'} className="introduction p-3 container d-flex mt-5 pb-5">
+            <div id={'about-me'} className="introduction p-3 lg:container flex lg:flex-row flex-col mt-5 pb-5">
                 <div className="d-flex flex1 p-5">
                     <img
                         src="https://eia476h758b.exactdn.com/wp-content/uploads/2021/10/Theth07_AlbaniaVisit.com_.jpg?strip=all&lossy=1&ssl=1"
                         alt="" className="profile-pic w-100"/>
                 </div>
-                <div className="d-flex flex1 flex-column text-start py-5 ">
+                <div className="d-flex flex1 flex-column text-start lg:py-5 lg:mx-0 mx-5">
                     <p className="lead">Hello</p>
                     <p className="bold-text m-0">I am Emilija Makaravičiūtė, </p>
                     <p className="bold-text m-0">Frontend Web Developer</p>
@@ -221,7 +221,7 @@ function App() {
                 </div>
             </div>
             <div className="education-container p-5">
-                <div className="d-flex container justify-content-around">
+                <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 container justify-content-around">
                     <div className="d-flex flex-column gap-3 text-start flex1 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                              className="bi bi-book mb-2" viewBox="0 0 16 16">
@@ -280,17 +280,17 @@ function App() {
                         <SkillComp skill={x} key={i}/>)}
                 </div>
             </div>
-            <div id={`projects`} className="projects d-flex mt-5 gap-5 me-5">
+            <div id={`projects`} className="projects flex lg:flex-row flex-col mt-5 gap-5 lg:me-5">
                 <div className="flex1">
                     {currentProject &&
                         <img
-                            className={`cover-image w-100`}
+                            className={`cover-image w-100 h-[500px]`}
                             src={currentProject?.coverImage}
                             alt={currentProject?.title}
                         />
                     }
                 </div>
-                <div className="flex1 d-flex flex-column align-items-start">
+                <div className="flex1 d-flex flex-column align-items-start  p-3">
                     <h1>Projects</h1>
                     <div className="line"></div>
                     <div className="d-flex flex-column gap-3 w-100 pt-3">
@@ -326,7 +326,7 @@ function App() {
                 <div id={`contact`} className="contacts d-flex flex-column justify-content-center what-i-do container ">
                     <h1 className="bold-text mt-5 text-start">Contact Info</h1>
                     <div className="d-flex flex-column text-start gap-3 mb-5 ">
-                        <div className="d-flex w-100 gap-5 my-5 ">
+                        <div className="d-flex lg:flex-row flex-col w-100 lg:gap-5 gap-4 my-5 ">
                             <div className="d-flex flex-column gap-3 flex1">
                                 <div className="d-flex gap-3 align-items-center">
                                     <div className="">

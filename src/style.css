@@ -111,12 +111,17 @@
 }
 
 .cover-image {
-  height: 500px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: 1s;
 }
 
+@media (max-width: 1024px) {
+  .cover-image {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
 .cursor {
   cursor: pointer;
 }
