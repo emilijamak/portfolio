@@ -136,11 +136,6 @@ function App() {
     ]
     const [currentProject, setCurrentProject] = useState(projects[0])
 
-    function setActiveProject(i) {
-        setActiveIndex(i)
-        setCurrentProject(projects[i])
-        console.log(currentProject)
-    }
 
     const handleMouseEnter = (i) => {
         // Clear any existing timeout to prevent unintended behavior
