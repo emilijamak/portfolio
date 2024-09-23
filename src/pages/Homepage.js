@@ -169,12 +169,12 @@ function App() {
         <div className="App">
             <div className="header">
                 <div className="headerBG">
-                    <div className="nav p-3 d-flex justify-content-around ">
+                    <div id={'start'} className="nav p-3 d-flex justify-content-around ">
                         <div></div>
                         <div className="">
                             <ul className="sm:flex gap-3 mb-0 hidden">
                                 <li className="me-3">
-                                    <a href="#">Home</a>
+                                    <a href="#start">Home</a>
                                 </li>
                                 <li className="me-3">
                                     <a href="#about-me">About</a>
