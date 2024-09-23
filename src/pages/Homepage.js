@@ -3,6 +3,7 @@ import shipAppCover from '../images/Screenshot 2024-08-14 084638.png'
 import shipAppImg1 from '../images/Screenshot 2024-08-14 084733.png'
 import shipAppImg2 from '../images/Screenshot 2024-08-14 084812.png'
 import shipAppImg3 from '../images/Screenshot 2024-08-14 085147.png'
+import myPicture from '../images/IMG_1510 - Copy.JPG'
 import chatAppCover from '../images/chat1.png'
 import '../App.css'
 import '../style.scss'
@@ -65,25 +66,26 @@ function App() {
 
 
     const jobs = [
-        {
-            svg: svg1,
-            name: 'App development',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur dolorem harum labore nobis perspiciatis sint temporibus vero. Inventore, quos!'
-        },
+
         {
             svg: svg2,
             name: 'Web development',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur dolorem harum labore nobis perspiciatis sint temporibus vero. Inventore, quos!'
+            description: 'I create dynamic websites using React, Node.js, and Next.js, ensuring a seamless user experience and robust performance tailored to meet your specific needs'
         },
         {
             svg: svg3,
             name: 'Responsive design',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur dolorem harum labore nobis perspiciatis sint temporibus vero. Inventore, quos!'
+            description: 'I create responsive designs that deliver a seamless experience across all devices and screen sizes.'
+        },
+        {
+            svg: svg1,
+            name: 'UI/UX design',
+            description: 'I design intuitive UI/UX experiences that prioritize user needs, making interactions simple, engaging, and visually appealing.'
         },
         {
             svg: svg4,
             name: 'Dedicated support',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur dolorem harum labore nobis perspiciatis sint temporibus vero. Inventore, quos!'
+            description: 'I provide dedicated support to ensure your project runs smoothly, addressing any issues promptly and offering assistance whenever needed.'
         },
     ];
 
@@ -195,29 +197,26 @@ function App() {
                         </div>
                     </div>
                     <div className="bigText w-100 h-100 justify-content-center align-items-center d-flex flex-column">
-                        <h1>Web Developer For Your</h1>
-                        <h1>Next Project</h1>
+                        <h1>Front-End Developer For </h1>
+                        <h1>Your Next Project</h1>
                     </div>
                 </div>
             </div>
             <div id={'about-me'} className="introduction p-3 lg:container flex lg:flex-row flex-col mt-5 pb-5">
                 <div className="d-flex flex1 p-5">
                     <img
-                        src="https://eia476h758b.exactdn.com/wp-content/uploads/2021/10/Theth07_AlbaniaVisit.com_.jpg?strip=all&lossy=1&ssl=1"
+                        src={myPicture}
                         alt="" className="profile-pic w-100"/>
                 </div>
                 <div className="d-flex flex1 flex-column text-start lg:py-5 lg:mx-0 mx-5">
                     <p className="lead">Hello</p>
                     <p className="bold-text m-0">I am Emilija Makaravičiūtė, </p>
-                    <p className="bold-text m-0">Frontend Web Developer</p>
+                    <p className="bold-text m-0">Frontend Developer</p>
                     <p className="bold-text m-0">from Vilnius, Lithuania</p>
-                    <p className="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda beatae
-                        consectetur culpa dolorem eaque eius eveniet incidunt, magni nesciunt nulla numquam officiis,
-                        quasi qui repellat tenetur velit voluptate voluptatem!</p>
-                    <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, earum?</p>
-                    <p className="m-1"><span style={{color: '#e74050'}} className="">Mail: </span>emakau11@gmail.com</p>
+                    <p className="mt-3">I have recently completed <span className={'font-semibold'}>Code Academy </span>Junior Front-end TypeScript developer studies. I am enthusiastic about embarking on my career as a Front-end Web Developer. With a strong commitment to continuous learning and improvement, I am eager to contribute to innovative projects and leverage my skills to create engaging and effective web solutions.</p>
+                    <p className="m-1"><span style={{color: '#e74050'}} className="">Mail: </span>em.makaraviciute@gmail.com</p>
                     <p className="m-1"><span style={{color: '#e74050'}} className="">Phone: </span>+37064562756</p>
-                    <div className="hire-me py-3 px-5 w-50 mt-3 cursor">HIRE ME</div>
+                    <a href="#contact" className="hire-me py-3 px-5 w-50 mt-3 cursor ">HIRE ME</a>
                 </div>
             </div>
             <div className="education-container p-5">
@@ -273,8 +272,7 @@ function App() {
             </div>
             <div id={`service`} className="what-i-do d-flex p-5 flex-column container pb-5 ">
                 <h1 className="bold-text mt-5">What I do.</h1>
-                <p className="text-muted m-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ex magnam
-                    minima modi, non ratione rerum sed? Asperiores, aut doloribus?</p>
+                <p className="text-muted m-3">Explore the range of services I offer, designed to elevate your digital presence. Let’s collaborate to create engaging and impactful solutions that resonate with your audience and achieve your goals.</p>
                 <div className="d-flex flex-wrap gap-4 mt-5">
                     {jobs.map((x, i) =>
                         <SkillComp skill={x} key={i}/>)}
@@ -353,7 +351,7 @@ function App() {
                                     </div>
                                     <div className="d-flex flex-column ">
                                         <h5 className="">Email Me</h5>
-                                        <p className="m-0 text-muted">emakau11@gmail.com</p>
+                                        <p className="m-0 text-muted">em.makaraviciute@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
