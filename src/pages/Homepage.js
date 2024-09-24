@@ -76,7 +76,10 @@ function App() {
             svg: svg3,
             name: 'Responsive design',
             description: 'I create responsive designs that deliver a seamless experience across all devices and screen sizes.'
-        },
+        }
+    ];
+    const jobsBottom = [
+
         {
             svg: svg1,
             name: 'UI/UX design',
@@ -265,11 +268,15 @@ function App() {
 
                 </div>
             </div>
-            <div id={`service`} className="what-i-do d-flex p-5 flex-column container pb-5 ">
+            <div id={`service`} className="what-i-do d-flex lg:p-5 flex-column container pb-5 ">
                 <h1 className="bold-text mt-5">What I do.</h1>
                 <p className="text-muted m-3">Explore the range of services I offer, designed to elevate your digital presence. Let’s collaborate to create engaging and impactful solutions that resonate with your audience and achieve your goals.</p>
-                <div className="d-flex flex-wrap gap-4 mt-5">
+                <div className="flex lg:flex-row flex-col gap-4 mt-5">
                     {jobs.map((x, i) =>
+                        <SkillComp skill={x} key={i}/>)}
+                </div>
+                <div className="flex lg:flex-row flex-col gap-4 mt-5">
+                    {jobsBottom.map((x, i) =>
                         <SkillComp skill={x} key={i}/>)}
                 </div>
             </div>
