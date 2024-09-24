@@ -23,7 +23,7 @@ const ShipAppPage = () => {
                     <div className="d-flex flex-column flex1 gap-4">
                         <div style={{color: '#202633'}} className="d-flex gap-3 align-items-center">
                             <div className="d-flex h-100 flex1">
-                                <h4 className={`d-flex text-start`} style={{margin: 0}}>MY CONTRIBUTION : </h4>
+                                <h4 className={`d-flex text-start`} style={{margin: 0}}>MY CONTRIBUTION: </h4>
                             </div>
                             <div className="d-flex flex-column flex2 text-start">
                                 <p style={{fontSize: '20px'}} className={`m-0`}>Front-End development</p>
@@ -40,9 +40,11 @@ const ShipAppPage = () => {
                             </div>
                         </div>
                         <div className="d-flex"></div>
+                        <div className="sm:hidden block line-thin mb-3"></div>
+
                     </div>
                     <div className="d-flex flex1 text-start">
-                        <p className="description">As part of a team of 11 Code Academy students, I contributed to the
+                    <p className="description">As part of a team of 11 Code Academy students, I contributed to the
                             development of siunti-vezi.lt, a web application built using React and Next.js. The platform
                             connects users with independent couriers, enabling them to ship parcels more affordably and
                             efficiently than traditional services like LP Express or DPD. Users can propose their own

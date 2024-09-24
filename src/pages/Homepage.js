@@ -201,12 +201,12 @@ function App() {
                 </div>
             </div>
             <div id={'about-me'} className="introduction p-3 lg:container flex lg:flex-row flex-col mt-5 pb-5">
-                <div className="d-flex flex1 p-5">
+                <div className="d-flex flex1 sm:p-5 p-3">
                     <img
                         src={myPicture}
                         alt="" className="profile-pic w-100"/>
                 </div>
-                <div className="d-flex flex1 flex-column text-start lg:py-5 lg:mx-0 mx-5">
+                <div className="d-flex flex1 flex-column text-start lg:py-5 lg:mx-0 sm:mx-5 mx-2">
                     <p className="lead">Hello</p>
                     <p className="bold-text m-0">I am Emilija Makaravičiūtė, </p>
                     <p className="bold-text m-0">Frontend Developer</p>
@@ -214,11 +214,13 @@ function App() {
                     <p className="mt-3">I have recently completed <span className={'font-semibold'}>Code Academy </span>Junior Front-end TypeScript developer studies. I am enthusiastic about embarking on my career as a Front-end Web Developer. With a strong commitment to continuous learning and improvement, I am eager to contribute to innovative projects and leverage my skills to create engaging and effective web solutions.</p>
                     <p className="m-1"><span style={{color: '#e74050'}} className="">Mail: </span>em.makaraviciute@gmail.com</p>
                     <p className="m-1"><span style={{color: '#e74050'}} className="">Phone: </span>+37064562756</p>
-                    <a href="#contact" className="hire-me py-3 px-5 w-50 mt-3 cursor ">HIRE ME</a>
+                    <div>
+                        <a href="#contact" className="hire-me py-3 px-5 w-50 mt-3 cursor w-100">HIRE ME</a>
+                    </div>
                 </div>
             </div>
-            <div className="education-container p-5">
-                <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 container justify-content-around">
+            <div className="education-container sm:p-5 p-2 pt-4">
+            <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 container justify-content-around">
                     <div className="d-flex flex-column gap-3 text-start flex1 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                              className="bi bi-book mb-2" viewBox="0 0 16 16">
